@@ -2,15 +2,19 @@
 
 int main(void)
 {
-    int input;
-    scanf("%d", &input);
-    if (!(input >= 0 && input < 10))
+    int x;
+
+    scanf("%d", &x);
+
+    if (x < 0 || x >= 10)
     {
-        printf("OK");
+        printf("OK\n");
     }
-    else
+
+    if (x >= 0 && x < 10)
     {
-        printf("NG");
+        printf("NG\n");
     }
+
     return 0;
 }
